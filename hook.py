@@ -13,9 +13,10 @@ def default():
 @app.route('/signing', methods=['POST'])
 def sign():
     #find a way to accept url/sign?source=clemenko/build,dest=clemenko/signed
+    #d_pull = subprocess.check_output(['python', 'py2.py', '-i', 'test.txt'])
+    
     return_string="Pulling from " + source + " and pushing to " + dest + "."
     return return_string, 200
 
-#d_pull = subprocess.check_output(['python', 'py2.py', '-i', 'test.txt'])
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
