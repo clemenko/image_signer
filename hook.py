@@ -14,7 +14,7 @@ def default():
 def sign():
     #find a way to accept url/sign?source=clemenko/build,dest=clemenko/signed
     #d_pull = subprocess.check_output(['python', 'py2.py', '-i', 'test.txt'])
-    
+    #https://dev.to/_andy_lu_/python-for-bash-3798
     return_string="Pulling from " + source + " and pushing to " + dest + "."
     return return_string, 200
 
